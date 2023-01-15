@@ -6,55 +6,97 @@
     padding: 0;
     margin: 0;
       
-    }
-    ul {
-    list-style-type: none;
+  }
+  nav{
+    background:rgb(138, 172, 159); 
+    height: 80px;
+    width: 100%;
+
+
+  }
+  nav ul {
     float: right;
-    }
-   .nav {
-      width: 100%;
-    height: 75px;
-    background-color:rgb(138, 172, 159);
-     overflow: hidden;
-    }
-    li {
-
-      display: inline-block;
-     
-    } 
-    li  a {
-      color: white;
-      text-align: center;
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-right: 30px;
-      text-decoration: none;
-     
-    }
-   .logo{
-        float: left;
-
-      margin-right:710px;
-   font-style: italic;
-   font-size: larger;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display:inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+  }
+  
+  nav ul li a img{
+    float: left;
+    height: 50px; 
+  }
+  .logo{
    
 
-    }
-    li a img{
-    
-        float: left;
-      height: 50px;
-     
-     
-    
-    }
-    
-    .slideshow-container {
-        width: 100%;
-        position: relative;
-       
-      }
+  margin-right:700px;
+font-style: italic;
+font-size: larger;
+
+
+}
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+      @media (max-width: 858px) {
+        .checkbtn{
+          display: block;
+        }
+        ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background:rgb(138, 172, 159);
+          top: 70px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+
+        }
+        nav ul li {
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        nav ul li a {
+          font-size: 20px;
+        }
+
+
+        nav ul li a img{
+         
+          height: 50px; 
+        }
+        .logo{
+         
       
+      
+      font-style: italic;
+      font-size: larger;
+      
+      
+      }
+        #check:checked ~ ul {
+          left: 0;
+        }
+      }
       /* Hide the images by default */
       .mySlides {
         display: none;

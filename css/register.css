@@ -1,0 +1,150 @@
+*{
+  box-sizing: border-box;
+} 
+body {
+
+  padding: 0;
+  margin: 0;
+    
+}
+nav{
+  background:rgb(138, 172, 159); 
+  height: 80px;
+  width: 100%;
+
+
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display:inline-block;
+  line-height: 70px;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  
+}
+nav ul li a img{
+  float: left;
+  height: 50px; 
+}
+.logo{
+ 
+
+margin-right:700px;
+font-style: italic;
+font-size: larger;
+
+
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+    @media (max-width: 858px) {
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:rgb(138, 172, 159);
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+      }
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      nav ul li a {
+        font-size: 20px;
+      }
+
+
+      nav ul li a img{
+       
+        height: 50px; 
+      }
+      .logo{
+       
+    
+    
+    font-style: italic;
+    font-size: larger;
+    
+    
+    }
+      #check:checked ~ ul {
+        left: 0;
+      }
+    }
+    
+.con{
+    background-color:rgb(138, 172, 159);
+    margin-top:2rem;
+    margin-left:27rem;
+    width:35%;
+    border-radius: 1rem;
+    height: 420px;
+}  
+
+.ll{
+  margin-left: 180px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.bb{
+
+  display: inline;
+  background-color:rgb(138, 172, 159);
+ 
+    margin-left:7.7rem;
+    width:45%;
+    color:white;
+    height: 100px;
+}
+#lg {
+  
+  width: 7.5rem;
+  height: 2.5rem;
+  background-color: rgb(141, 139, 136);
+  color:white;
+   margin-left: 11rem;
+ border-radius: 1rem;
+   cursor: pointer;
+   margin-top: 1.5rem;
+   border: solid white;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:rgb(138, 172, 159);
+  color: white;
+  margin-top: 3rem;
+}
+input[type=radio],input[type=checkbox]{
+transform: scale(1);
+margin-right: 10px;
+}

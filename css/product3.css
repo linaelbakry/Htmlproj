@@ -1,0 +1,215 @@
+*{
+  box-sizing: border-box;
+} 
+body {
+
+  padding: 0;
+  margin: 0;
+    
+  }
+  nav{
+    background:rgb(138, 172, 159); 
+    height: 80px;
+    width: 100%;
+
+
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li {
+    display:inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+  }
+  nav ul li a img{
+    float: left;
+    height: 50px; 
+  }
+  .logo{
+   
+
+  margin-right:700px;
+font-style: italic;
+font-size: larger;
+
+
+}
+  .checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+  
+
+
+.produ {
+  float:left; 
+  background-color:white;
+  
+
+  width: 480px ;
+    height:400px;
+  
+  
+}
+
+.produ img{
+
+    margin-left: 7rem;
+    width: 320px ;
+    height:400px;
+   
+  
+  }
+  .lab{
+    float:right; 
+    background-color:white;
+    
+    margin-top: 6rem;
+    width:50%;
+    height:19rem;
+    
+   
+  }
+
+
+
+  .lab label{
+    font-size: 1.3rem;
+    font-weight: 700;
+   
+    margin-left: 4rem;
+    color:gray;
+    
+   
+  }
+
+#lg {
+  
+  width: 8rem;
+  height: 3rem;
+  background-color: rgb(141, 139, 136);
+  color:white;
+   margin-left: 4rem;
+ border: solid white;
+   cursor: pointer;
+}
+@media (max-width: 700px) {
+
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:rgb(138, 172, 159);
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+
+
+  nav ul li a img{
+   
+    height: 50px; 
+  }
+  .logo{
+   
+
+
+font-style: italic;
+font-size: larger;
+
+
+}
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .produ {
+    float:left; 
+    background-color:white;
+    
+  
+    width: 350px ;
+      height:200px;
+    
+    
+  }
+  
+  .produ img{
+  
+      margin-left: 3rem;
+      width: 220px ;
+      height:300px;
+     
+    
+    }
+    .lab{
+      
+      background-color:white;
+      margin-right: 7rem;
+      margin-top: 5rem;
+      width:350px;
+      height:7rem;
+      
+     
+    }
+  
+  
+  
+    .lab label{
+      font-size: 0.9rem;
+      font-weight: 700;
+     
+      margin-left: 2rem;
+      color:gray;
+      
+     
+    }
+  
+  #lg {
+    
+    width: 7rem;
+    height: 2rem;
+    background-color: rgb(141, 139, 136);
+    color:white;
+     margin-left: 3rem;
+   border: solid white;
+     cursor: pointer;
+  }
+  
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:rgb(138, 172, 159);
+  color: white;
+  margin-top: 28rem;
+}

@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+  } 
+  body {
+  
+    padding: 0;
+    margin: 0;
+      
+    }
+    nav{
+      background:rgb(138, 172, 159); 
+      height: 80px;
+      width: 100%;
+  
+  
+    }
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li {
+      display:inline-block;
+      line-height: 70px;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 500;
+      
+    }
+    nav ul li a img{
+      float: left;
+      height: 50px; 
+    }
+    .logo{
+     
+  
+    margin-right:700px;
+  font-style: italic;
+  font-size: larger;
+  
+  
+  }
+    .checkbtn{
+      font-size: 30px;
+      color: #fff;
+      float: right;
+      line-height: 80px;
+      margin: 20px;
+      cursor: pointer;
+      display: none;
+    }
+    #check{
+      display: none;
+    }
+  table, caption{
+   
+    background: rgb(138, 172, 159);
+    width: 800px;
+    margin: auto;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+border-radius: 1rem;
+  }
+  table, tr, th, td{
+    border: 1px solid white;
+    background: white;
+    margin-top: 6rem;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    color:rgb(138, 172, 159);
+    font-size: 1rem;
+    font-weight: 600;
+    
+  }
+
+
+  @media (max-width: 700px) {
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:rgb(138, 172, 159);
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+  
+  
+    nav ul li a img{
+     
+      height: 50px; 
+    }
+    .logo{
+     
+  
+  
+  font-style: italic;
+  font-size: larger;
+  
+  
+  }
+    #check:checked ~ ul {
+      left: 0;
+    }
+    table, caption{
+   
+      background: rgb(138, 172, 159);
+      width: 400px;
+      margin: auto;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+  border-radius: 0.5rem;
+    }
+    table, tr, th, td{
+      border: 1px solid white;
+      background: white;
+      margin-top: 4rem;
+      border-collapse: collapse;
+      padding: 7px;
+      text-align: center;
+      color:rgb(138, 172, 159);
+      font-size: 0.8rem;
+      font-weight: 600;
+      
+    }
+    
+  }
+
+
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color:rgb(138, 172, 159);
+    color: white;
+    margin-top: 6rem;
+  }
