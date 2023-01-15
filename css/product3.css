@@ -110,7 +110,7 @@ font-size: larger;
  border: solid white;
    cursor: pointer;
 }
-@media (max-width: 700px) {
+@media (max-width: 858px) {
 
   .checkbtn{
     display: block;

@@ -55,48 +55,7 @@ font-size: larger;
   #check{
     display: none;
   }
-      @media (max-width: 858px) {
-        .checkbtn{
-          display: block;
-        }
-        ul{
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          background:rgb(138, 172, 159);
-          top: 70px;
-          left: -100%;
-          text-align: center;
-          transition: all .5s;
-
-        }
-        nav ul li {
-          display: block;
-          margin: 50px 0;
-          line-height: 30px;
-        }
-        nav ul li a {
-          font-size: 20px;
-        }
-
-
-        nav ul li a img{
-         
-          height: 50px; 
-        }
-        .logo{
-         
-      
-      
-      font-style: italic;
-      font-size: larger;
-      
-      
-      }
-        #check:checked ~ ul {
-          left: 0;
-        }
-      }
+  
       /* Hide the images by default */
       .mySlides {
         display: none;
@@ -292,5 +251,169 @@ font-size: larger;
     margin-top: 24rem;
   }
 
+  @media (max-width: 858px) {
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:rgb(138, 172, 159);
+      top: 70px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
 
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+
+
+    nav ul li a img{
+     
+      height: 50px; 
+    }
+    .logo{
+     
+  
+  
+  font-style: italic;
+  font-size: larger;
+  
+  
+  }
+    #check:checked ~ ul {
+      left: 0;
+    }
+
+
+   
+    #leftdiv {
+  
+      
+      
+      width:100%;
+     margin-bottom: 24px;
+      
+    }
+    #middiv{
+      margin-left: 3rem;
+      width:100%;
+      margin-bottom: 24px;
+    }
+    #rightdiv{
+      margin-left: 3rem;
+      width:100%;
+      margin-bottom: 24px;
+    }
+    #lastdiv{
+      margin-left: 3rem;
+      width:100%;
+      margin-bottom: 24px;
+    }
+    
+    #leftdiv a {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-left:2rem;
+      font-style: italic;
+      color:gray;
+      
+    }
+    #leftdiv label {
+      font-size: 1rem;
+      font-weight: 700;
+     
+      margin-left: 2rem;
+      color:gray;
+      
+    }
+    #middiv a {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-left:2.7rem;
+      font-style: italic;
+      color:gray;
+    }
+    #middiv label {
+      font-size: 1rem;
+      font-weight: 700;
+     
+      margin-left: 2.5rem;
+      color:gray;
+    }
+    #rightdiv a {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-left:3rem;
+      font-style: italic;
+      color:gray;
+      
+    }
+    #rightdiv label {
+      font-size: 1rem;
+      font-weight: 700;
+     
+      margin-left: 2.8rem;
+      color:gray;
+    }
+    #lastdiv a {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-left:2rem;
+      font-style: italic;
+      color:gray;
+      
+    }
+    #lastdiv label {
+      font-size: 1rem;
+      font-weight: 700;
+     
+      margin-left: 2rem;
+      color:gray;
+    }
+    #leftdiv img {
+     
+      width:400px;
+      
+    
+    
+    }
+    #middiv img {
+     
+      width:400px;
+    
+    }
+    #rightdiv img {
+     
+      width:400px;
+    
+    }
+    #lastdiv img {
+  
+      width:400px;
+    
+    }
+
+
+    footer {
+      text-align: center;
+      padding: 3px;
+      background-color:rgb(138, 172, 159);
+      color: white;
+      margin-top: 90rem;
+    }
+
+
+
+
+
+  }
 
